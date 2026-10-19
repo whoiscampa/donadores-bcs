@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donadores BCS</title>
+    <!-- 1. Separación de App Shell y Vistas -->
+    <link rel="stylesheet" href="styles/shell.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+    <!-- App Shell: Estructura fija -->
     <header>
         <h1>Donadores BCS</h1>
         <nav>
@@ -15,7 +18,14 @@
         </nav>
     </header>
 
-    <main id="app"></main>
+    <!-- Contenedor dinámico con Skeleton inicial para el router -->
+    <main id="app">
+        <div class="items-grid">
+            <div class="item-card skeleton-card"></div>
+            <div class="item-card skeleton-card"></div>
+            <div class="item-card skeleton-card"></div>
+        </div>
+    </main>
 
     <script type="module" src="src/main.js"></script>
 </body>
