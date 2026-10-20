@@ -1,9 +1,3 @@
-/* ==========================================
-   DYNAMIC VIEWS & CONTENT (views.css)
-   Estilos específicos de las vistas inyectadas por el router
-   ================================---------- */
-
-/* Grids y Tarjetas (Mobile First) */
 .items-grid {
   display: flex;
   flex-direction: column;
@@ -36,7 +30,6 @@ button:hover {
   font-style: italic;
 }
 
-/* Estado de Carga (Skeleton Animation) */
 .skeleton-card {
   background: #e0e0e0;
   height: 120px;
@@ -50,7 +43,6 @@ button:hover {
   100% { opacity: 0.6; }
 }
 
-/* Escalado de la vista según el dispositivo */
 @media (min-width: 768px) {
   .items-grid {
     display: grid;

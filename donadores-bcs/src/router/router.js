@@ -1,13 +1,15 @@
 import { HomeView } from '../views/HomeView.js';
 import { AboutView } from '../views/AboutView.js';
 import { ItemDetailView } from '../views/ItemDetailView.js';
-import { NotFoundView } from '../views/NotFoundView.js';
+import { DiagnosticView } from '../views/DiagnosticView.js';
+import { FavoritesView } from '../views/FavoritesView.js'; // <-- Importar la vista
 
 const routes = {
     '/': HomeView,
-    '/index.html': HomeView,
-    '/acerca': AboutView,
-    '/item/:id': ItemDetailView
+    '/about': AboutView,
+    '/detalle': ItemDetailView,
+    '/diagnostico': DiagnosticView,
+    '/favoritos': FavoritesView 
 };
 
 export function matchRoute(path) {
